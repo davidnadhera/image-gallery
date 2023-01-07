@@ -26,6 +26,7 @@ const Search = (props) => {
                   onChange={changedHandler}
                   value={word}
                   placeholder="Search a new image"
+                  autoFocus
                 />
               </Col>
               <Col xs="3">

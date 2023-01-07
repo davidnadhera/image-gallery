@@ -1,7 +1,16 @@
-function App() {
+import "bootstrap/dist/css/bootstrap.min.css";
+import Header from "./components/Header";
+import Search from "./components/Search";
+
+function App(word) {
+  const searchHandler = (word) => {
+    console.log(word);
+  };
+
   return (
     <div className="App">
-      <h1>Image Gallery</h1>
+      <Header title="Image Gallery" />
+      <Search onSearch={searchHandler} />
     </div>
   );
 }
